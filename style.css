@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.primary {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.head {
+  border: 2px solid cornflowerblue;
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  /*justify-content: end;*/
+}
+
+.sideBar {
+  border: 2px solid cornflowerblue;
+  width: 20vw;
+  height: 70vh;
+}
+
+.content {
+  border: 2px solid cornflowerblue;
+  width: 80vw;
+  height: 70vh;
+}
+
+.foot {
+  border: 2px solid cornflowerblue;
+  width: 100vw;
+  height: 10vh;
+}
