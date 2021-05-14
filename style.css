@@ -63,7 +63,23 @@ a {
   border: 2px solid cornflowerblue;
   width: 100vw;
   height: 10vh;
-  text-align: center;
-  justify-content: center;
+  /*text-align: center;*/
+  justify-content:space-around;
  
+}
+
+i {
+  color: cornflowerblue;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
 }
