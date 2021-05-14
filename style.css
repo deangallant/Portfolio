@@ -12,17 +12,43 @@
 }
 
 .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid cornflowerblue;
   width: 100vw;
   height: 20vh;
   text-align: center;
-  /*justify-content: end;*/
+  
 }
 
 .sideBar {
   border: 2px solid cornflowerblue;
   width: 20vw;
   height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBar li {
+  list-style: none;
+  border: 1px solid cornflowerblue;
+  margin: .5rem 0 .5rem 0;
+  padding: .5rem;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px;
+  
+}
+
+.sideBar li:hover {
+  background: cornflowerblue;
+}
+
+a {
+  text-decoration: none;
 }
 
 .content {
@@ -32,7 +58,12 @@
 }
 
 .foot {
+  display: flex;
+  align-items: center;
   border: 2px solid cornflowerblue;
   width: 100vw;
   height: 10vh;
+  text-align: center;
+  justify-content: center;
+ 
 }
