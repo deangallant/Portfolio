@@ -17,7 +17,7 @@
   align-items: center;
   border: 2px solid cornflowerblue;
   width: 100vw;
-  height: 20vh;
+  height: 15vh;
   text-align: center;
   
 }
@@ -25,7 +25,7 @@
 .sideBar {
   border: 2px solid cornflowerblue;
   width: 20vw;
-  height: 70vh;
+  height: 75vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -40,7 +40,6 @@
   padding: .5rem;
   border-radius: 10px;
   box-shadow: 0px 2px 5px;
-  
 }
 
 .sideBar li:hover {
@@ -54,7 +53,7 @@ a {
 .content {
   border: 2px solid cornflowerblue;
   width: 80vw;
-  height: 70vh;
+  height: 75vh;
 }
 
 .foot {
