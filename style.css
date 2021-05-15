@@ -44,6 +44,7 @@
 
 .sideBar li:hover {
   background: cornflowerblue;
+  cursor: pointer;
 }
 
 a {
