@@ -1,9 +1,14 @@
-const navButtons = document.querySelector('.navButton')
+const navButtons = document.querySelectorAll('.navButton')
 const content = document.querySelector('.content')
 
-navButtons.addEventListener('click', (e) => {
-  loadIframe(e.target.innerHTML)
+navButtons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    console.log(e.target.innerHTML)
+    loadIframe(e.target.innerHTML)
+  })
 })
+
+
 
 function loadIframe(name) {
   content.insertAdjacentHTML("afterbegin",`
