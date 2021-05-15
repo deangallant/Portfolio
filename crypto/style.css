@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+header {
+    background: #0b1361;
+
+}
+
+main {
+    background: #042a80;
+}
+
+footer {
+    background: #0b1361;
+    padding: 1rem;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.foot {
+    width: 480px;
+    margin: 0 auto;
+
+}
+.foot h3 {
+    letter-spacing: 5px;
+}
+.navigate {
+    width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo {
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.links {
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: .75rem;
+}
+a:hover {
+    background:lightgray;
+    border-radius: 10px;
+    color: #0b1361;
+    font-weight: 700;
+}
+
+.summary button:hover {
+    font-weight: 700;
+    background:lightgreen;
+}
+
+.hero {
+    width: 480px;
+    margin: 0 auto;
+}
+
+.team-msg {
+    text-align: center;
+}
+
+.team-msg h1 {
+    padding: 3rem 0 2rem 0;
+}
+
+.team-msg p {
+    padding-bottom: 2rem;
+}
+
+.staff-card {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay img {
+    border-radius: 5px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: -25px;
+    left: 100px;
+    width: 60%;   
+    background-image: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+    border-radius: 5px;
+}
+
+.overlay-text h3 {
+    font-weight: 300;
+}
+
+.report {
+    text-align: center;
+    width: 480px;
+    margin: 0 auto;
+}
+
+.summary h1 {
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 3rem 0 2rem 0;
+}
+
+.summary p {
+    padding: 1rem;
+    line-height: 2rem;
+}
+.summary button {
+    width: 275px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border-radius: 25px;
+    color: white;
+    background-image: linear-gradient(109.8deg,rgba(250,111,152,1) 5.6%,rgba(255,189,55,1) 91.5% );
+}
+
+@media only screen and (min-width:900px){
+    .navigate {
+        width: 900px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+             
+    
+    }
+
+    .links {
+        padding-top: 1rem;
+    }
+
+    .hero {
+        width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    }
+
+    .team-msg {
+        width: 100vw;
+        height: 10vh;
+        margin-bottom: 7rem;
+        padding: 0 3rem 0 3rem;
+        line-height: 2rem;
+       
+    }
+
+    .team-msg p {
+        text-align: center;
+    }
+
+    .staff-card {
+        padding: 0 2rem 0 2rem;
+    }
+
+    .overlay-text {
+        
+        bottom: -25px;
+        left: 35px;
+        width: 80%;   
+        
+        
+    }
+
+    .foot {
+        width: 900px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copy {
+        margin-top: 1rem;
+    }
+
+    .chart img {
+        width: 100%;
+        margin-top: 3rem;
+        
+    }
+
+}
+
+@media only screen and (min-width: 1100px) {
+    .navigate {
+        width: 1100px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+        
+           
+    
+    }
+    
+    .hero {
+        width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .overlay img {
+        width: 200px;
+        height: 225px;
+    }
+
+    .overlay-text {
+        
+        bottom: -13px;
+        left: 10px;
+        width: 90%;
+        font-size: .75rem;   
+        
+        
+    }
+
+    .report {
+        display: flex;
+        width: 1100px;
+        justify-content: space-between;
+        padding: 3rem;
+
+    }
+
+    .summary {
+        width: 50vw;
+        text-align: left;
+    }
+
+    .chart {
+        width: 50vw;
+    }
+
+    .chart img {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+
+
+    
+}
+
+
+
