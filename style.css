@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid cornflowerblue;
+  background-color: cornflowerblue;
   width: 100vw;
   height: 15vh;
   text-align: center;
@@ -23,7 +23,7 @@
 }
 
 .navBar {
-  border: 2px solid cornflowerblue;
+  
   width: 15vw;
   height: 75vh;
   display: flex;
@@ -31,15 +31,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: cornflowerblue;
 }
 
 .navBar li {
   list-style: none;
-  border: 1px solid cornflowerblue;
+  
   margin: .5rem 0 .5rem 0;
   padding: .5rem;
   border-radius: 10px;
   box-shadow: 0px 2px 5px;
+  background-color: whitesmoke;
 }
 
 .navBar li:hover {
@@ -52,24 +54,25 @@ a {
 }
 
 .content {
-  border: 2px solid cornflowerblue;
   width: 85vw;
   height: 75vh;
+  background-color: cornflowerblue;
+  
 }
 
 .foot {
   display: flex;
   align-items: center;
-  border: 2px solid cornflowerblue;
+ 
   width: 100vw;
   height: 10vh;
-  /*text-align: center;*/
+  background-color: cornflowerblue;
   justify-content:space-around;
  
 }
 
 i {
-  color: cornflowerblue;
+  color: orange
 }
 
 .skills {
@@ -82,4 +85,9 @@ i {
   display: flex;
   justify-content: space-evenly;
   width: 50vw;
+}
+
+iframe {
+  /*border-radius:50px;*/
+  
 }
