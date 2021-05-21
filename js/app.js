@@ -1,19 +1,3 @@
-const navButtons = document.querySelectorAll('.navButton')
-const content = document.querySelector('.content')
-
-navButtons.forEach(button => {
-  button.addEventListener('click', (e) => {
-    
-    loadIframe(e.target.innerHTML)
-  })
-})
-
-
-
-function loadIframe(name) {
-  content.innerHTML = ''
-  content.insertAdjacentHTML("afterbegin",`
-  <iframe src="Portfolio Examples/${name}/index.html" height='100%' width="100%"   frameborder="0"></iframe>
-  `
-  )
-}
+const navButtons=document.querySelectorAll(".navButton"),content=document.querySelector(".content");function loadIframe(e){content.innerHTML="",content.insertAdjacentHTML("afterbegin",`
+  <iframe src="Portfolio Examples/${e}/index.html" height='100%' width="100%"   frameborder="0"></iframe>
+  `)}navButtons.forEach(e=>{e.addEventListener("click",e=>{loadIframe(e.target.innerHTML)})});
