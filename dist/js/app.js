@@ -3,7 +3,7 @@ const content = document.querySelector('.content')
 
 navButtons.forEach(button => {
   button.addEventListener('click', (e) => {
-    console.log(e.target.innerHTML)
+    
     loadIframe(e.target.innerHTML)
   })
 })
@@ -13,7 +13,7 @@ navButtons.forEach(button => {
 function loadIframe(name) {
   content.innerHTML = ''
   content.insertAdjacentHTML("afterbegin",`
-  <iframe src="Portfolio Examples/${name}/index.html" height='100%' width="100%"   frameborder="0"></iframe>
+  <iframe src="${name}/index.html" height='100%' width="100%"   frameborder="0"></iframe>
   `
   )
 }

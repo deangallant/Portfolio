@@ -21,8 +21,14 @@ function copyCSS() {
   .pipe(dest('dist/css/'))
 }
 
+function copyImages() {
+  return src('src/images/*')
+  .pipe(dest('dist/images/'))
+}
 
-exports.default = series(copyHTML);
+
+exports.default = series(copyHTML, copyIframes, copyJS, copyImages);
 exports.copyIframes = copyIframes;
 exports.copyJS = copyJS;
 exports.copyCSS = copyCSS;
+exports.copyImages = copyImages;
