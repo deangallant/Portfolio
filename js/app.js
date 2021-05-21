@@ -13,7 +13,7 @@ navButtons.forEach(button => {
 function loadIframe(name) {
   content.innerHTML = ''
   content.insertAdjacentHTML("afterbegin",`
-  <iframe src="${name}/index.html" height='100%' width="100%"   frameborder="0"></iframe>
+  <iframe src="Portfolio Examples/${name}/index.html" height='100%' width="100%"   frameborder="0"></iframe>
   `
   )
 }
