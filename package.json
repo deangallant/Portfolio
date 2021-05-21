@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/deangallant/portfolio/issues"
   },
-  "homepage": "https://github.com/deangallant/portfolio#readme"
+  "homepage": "https://github.com/deangallant/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
