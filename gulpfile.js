@@ -1,6 +1,7 @@
 const { src, dest, series, parallel, watch} = require('gulp');
 const replaceHTML = require('gulp-html-replace')
 const cleanCSS = require('gulp-clean-css')
+const sourceMaps = require('gulp-sourcemaps')
 
 function copyHTML() {
   return src('src/*.html')
@@ -19,7 +20,9 @@ function copyJS() {
 
 function copyCSS() {
   return src('src/css/*')
+  .pipe(sourceMaps.init())
   .pipe(cleanCSS())
+  .pipe(sourceMaps.write())
   .pipe(dest('dist/css/'))
 }
 
