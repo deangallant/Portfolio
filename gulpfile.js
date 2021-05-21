@@ -3,6 +3,7 @@ const replaceHTML = require('gulp-html-replace')
 const cleanCSS = require('gulp-clean-css')
 const sourceMaps = require('gulp-sourcemaps')
 const uglify = require('gulp-uglify')
+const imagemin = require('gulp-imagemin')
 
 function copyHTML() {
   return src('src/*.html')
@@ -32,6 +33,7 @@ function copyCSS() {
 
 function copyImages() {
   return src('src/images/*')
+  .pipe(imagemin())
   .pipe(dest('dist/images/'))
 }
 
