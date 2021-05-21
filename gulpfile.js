@@ -2,6 +2,7 @@ const { src, dest, series, parallel, watch} = require('gulp');
 const replaceHTML = require('gulp-html-replace')
 const cleanCSS = require('gulp-clean-css')
 const sourceMaps = require('gulp-sourcemaps')
+const uglify = require('gulp-uglify')
 
 function copyHTML() {
   return src('src/*.html')
@@ -15,6 +16,7 @@ function copyIframes() {
 
 function copyJS() {
   return src('src/js/*')
+  .pipe(uglify())
   .pipe(dest('dist/js/'))
 }
 
