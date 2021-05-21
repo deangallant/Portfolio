@@ -16,7 +16,13 @@ function copyJS() {
   .pipe(dest('dist/js/'))
 }
 
+function copyCSS() {
+  return src('src/css/*')
+  .pipe(dest('dist/css/'))
+}
 
-exports.default = series(copyHTML)
-exports.copyIframes = copyIframes
-exports.copyJS = copyJS
+
+exports.default = series(copyHTML);
+exports.copyIframes = copyIframes;
+exports.copyJS = copyJS;
+exports.copyCSS = copyCSS;
