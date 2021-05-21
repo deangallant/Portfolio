@@ -32,7 +32,7 @@ function copyImages() {
 }
 
 
-exports.default = series(copyHTML, copyIframes, copyJS, copyImages);
+exports.default = series(copyHTML, copyIframes, copyJS, copyCSS, copyImages);
 exports.copyIframes = copyIframes;
 exports.copyJS = copyJS;
 exports.copyCSS = copyCSS;
