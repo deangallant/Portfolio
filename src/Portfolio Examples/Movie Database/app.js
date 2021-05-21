@@ -37,7 +37,7 @@ const renderHover =  (data) => {
 function handleEvent(e) {
   if(e.target.nodeName === 'FORM') {
     e.preventDefault();
-    const url = `http://www.omdbapi.com/?apikey=89a15f2d&s=${e.target.firstElementChild.value}`
+    const url = `https://www.omdbapi.com/?apikey=89a15f2d&s=${e.target.firstElementChild.value}`
     dataRequest(url)
     .then((responseData) => {
     render(responseData);
@@ -54,7 +54,7 @@ function handleEvent(e) {
 
 function handleHover(e) {
   const id = e.target.parentElement.parentElement.dataset.id;
-  const url = `http://www.omdbapi.com/?apikey=89a15f2d&i=${id}`;
+  const url = `https://www.omdbapi.com/?apikey=89a15f2d&i=${id}`;
   dataRequest(url)
   .then(data => {
     renderHover(data);
