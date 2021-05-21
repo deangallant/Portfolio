@@ -16,7 +16,9 @@ function copyIframes() {
 
 function copyJS() {
   return src('src/js/*')
+  .pipe(sourceMaps.init())
   .pipe(uglify())
+  .pipe(sourceMaps.write())
   .pipe(dest('dist/js/'))
 }
 
