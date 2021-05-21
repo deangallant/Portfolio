@@ -46,7 +46,7 @@
 }
 
 .navBar li:hover {
-  background: cornflowerblue;
+  background: orange;
   cursor: pointer;
 }
 
