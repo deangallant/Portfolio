@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: 1px solid lightgrey;
+}
+
+.nav-head {
+    width: 375px;
+    display: flex;  
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.br h1 {
+    font-family: Verdana;
+    letter-spacing: .25rem;
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 2rem;
+}
+
+.arch h1 {  
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: 200;
+}
+
+.links  {
+    display: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    color:darkgray;
+    font-size: 1.25rem;
+}
+
+.hero {
+    width: 375px; 
+    margin: 0 auto;
+    position: relative; 
+}
+
+.architech h1{
+    display: none;
+}
+
+.overlay1 img {
+    width: 375px;
+    height: 200px;
+}
+
+.overlay1-br {
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    padding: 1rem 1.5rem;
+    top: 50px;
+    left: 135px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: .25rem;
+}
+
+.projects { 
+    width: 350px;
+    margin: 0 auto;
+}
+
+.projects a {
+    text-decoration: none;
+    color: white;
+}
+
+.projects a:hover {
+    color:lightgrey;  
+}
+
+.about a {
+    text-decoration: none;
+    color: black;
+}
+
+.about a:hover {
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.contact a {
+    text-decoration: none;
+    color:white;
+}
+
+.projects h1 {
+    border-bottom: .5px solid lightgray;
+    margin-bottom: 3rem;
+    line-height: 4rem;
+}
+
+.overlay img {
+    width: 345px;
+}
+
+.house-card {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.overlay-text {
+    position: absolute;
+    padding: .5rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    top: 0;
+    font-size: .75rem;
+}
+
+.about {
+    margin-top: 3rem;
+    width: 350px;
+    line-height: 1.5rem;
+    margin: 0 auto;  
+}
+
+.about h1 {
+    border-bottom: 1px solid grey;
+    margin-bottom: 3rem;
+    line-height: 4rem;
+}
+
+.about p {
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.staff-card img {
+    width: 345px;
+    filter: grayscale(75%)
+}
+
+.staff-card h1 {
+    border-bottom: 0px;
+    margin-bottom: 0;
+    font-size: 1.75rem;
+}
+
+.staff-card h3 {
+    color: grey;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.staff-card p {
+    margin-bottom: 1rem;
+}
+
+.staff-card button {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.staff-card {
+    margin-bottom: 2rem;
+}
+
+.contact {
+    margin-top: 3rem;
+    width: 350px;
+    line-height: 1.5rem;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    border-bottom: 1px solid grey;
+    margin-bottom: 3rem;
+    line-height: 4rem;
+}
+
+.contact p {
+    margin-bottom: 2rem;
+}
+
+.contact img {
+    width: 345px;  
+}
+
+input {
+    width: 345px;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 2rem; 
+}
+
+.contact button {
+    width: 10rem;
+    height: 2rem;
+    padding: .5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2rem;
+}
+
+.contact a:hover {
+    color:lightgrey;
+}
+
+.foot {
+    height: 2rem;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:650px){
+
+.nav-head {
+    width: 575px;
+    justify-content: space-between;
+}
+
+.links  {
+    display: inline;
+}
+
+li {
+    display: inline;
+    padding: .5rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+.hero {
+    width: 650px;
+}
+
+.overlay1 img {
+    width: 615px;
+    height: 300px;
+}
+
+.overlay1-br {
+    font-size: 1.25rem;
+    top: 115px;
+    left: 115px;  
+}
+
+.architech h1{
+    position: absolute;
+    top: 128px;
+    left: 255px;
+    display: inline;
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.projects {
+    width: 650px;
+}
+
+.overlay img {
+    width: 275px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.house-card {
+    margin: 1rem;
+}
+
+.about {
+    margin-top: 3rem;
+    width: 650px;
+    line-height: 1.5rem;
+    padding: 1rem;  
+}
+
+.staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.staff-card {
+    width: 290px;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.staff-card img {
+    width: 290px;
+}
+
+.contact {
+    width: 650px;  
+}
+
+input {
+    width: 620px;
+}
+
+.contact img {
+    width: 625px;
+}
+
+}
+
+@media only screen and (min-width:960px){
+
+.nav-head {
+    width: 910px;
+}
+
+.links {
+    margin-right: 2rem;
+}
+
+.hero {
+    width: 910px;
+}
+
+.overlay1 img {
+    width: 908px;
+    height: 400px;
+}
+
+.overlay1-br {
+    top: 164px;
+    left: 270px;
+}
+
+.architech h1{
+    top: 176px;
+    left: 410px;
+}
+
+.projects {
+    width: 910px;
+}
+
+.overlay img {
+    width: 375px;
+}
+
+.about {
+    width: 910px;
+}
+
+.staff-card {
+    width: 400px;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.staff-card img {
+    width: 400px;
+}
+
+.contact {
+    width: 910px;
+    padding: 0rem 1rem;
+}
+
+input {
+    width: 850px;
+}
+
+.contact img {
+    width: 855px;
+}
+
+}
+
+@media only screen and (min-width:1280px) {
+
+.nav-head {
+        width: 1280px;
+}
+
+.hero {
+        width: 1280px;
+}
+
+.overlay1 img {
+        width: 1275px;
+        height: 605px; 
+}
+
+.overlay1-br {
+        top: 260px;
+        left: 460px;
+}
+    
+.architech h1 {
+        top: 275px;
+        left: 595px;
+}
+
+.projects {
+        width: 1280px;
+}
+
+.overlay img {
+        width: 288px;
+}
+
+.about {
+        width: 1280px;
+}
+
+.staff-card {
+        width: 296px;
+        margin: 1rem 1rem 1rem 0;
+}
+    
+.staff-card img {
+        width: 296px;
+}
+.contact {
+        width: 1280px;
+        padding: 0rem 2.25rem;
+    }
+
+input {
+        width: 1280px;
+    }
+    
+.contact img {
+        width: 1280px;
+        height: 700px;
+    }
+
+}

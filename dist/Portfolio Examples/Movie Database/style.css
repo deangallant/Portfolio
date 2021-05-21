@@ -1,0 +1,57 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: whitesmoke
+}
+
+.movies {
+  display:flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-top: 2px solid #ff000066;
+  margin-top: 3rem;
+}
+
+.movies li {
+  padding: 1rem;
+  box-shadow: 0 0 15px 5px #ff000066;
+  margin: 2rem;
+  list-style: none;
+}
+
+.movies li img {
+  border-radius: 2%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem 0rem 5rem;
+  
+}
+
+.overlay {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.overlay p {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+}
+
+.overlay:hover p {
+  display: block;
+}
