@@ -6,5 +6,11 @@ function copyHTML() {
   .pipe(dest('dist/'))
 }
 
+function copyIframes() {
+  return src('src/Alien Invasion/*')
+  .pipe(dest('dist/Alien Invasion/'));
+}
 
-exports.default = copyHTML
+
+exports.default = series(copyHTML)
+exports.copyIframes = copyIframes
