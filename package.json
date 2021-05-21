@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/deangallant/portfolio#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-html-replace": "^1.6.2"
   }
 }
