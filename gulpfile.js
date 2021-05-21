@@ -6,9 +6,10 @@ function copyHTML() {
   .pipe(dest('dist/'))
 }
 
+
 function copyIframes() {
-  return src('src/Alien Invasion/*')
-  .pipe(dest('dist/Alien Invasion/'));
+  return src('src/Portfolio Examples/**/*')
+  .pipe(dest('dist/Portfolio Examples/'));
 }
 
 
