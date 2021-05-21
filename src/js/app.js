@@ -3,7 +3,7 @@ const content = document.querySelector('.content')
 
 navButtons.forEach(button => {
   button.addEventListener('click', (e) => {
-    console.log(e.target.innerHTML)
+    
     loadIframe(e.target.innerHTML)
   })
 })
