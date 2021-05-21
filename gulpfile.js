@@ -44,6 +44,7 @@ exports.copyJS = copyJS;
 exports.copyCSS = copyCSS;
 exports.copyImages = copyImages;
 
-//git subtree push --prefix dist origin gh-pages
-//movie database
-//crypto
+//git subtree push --prefix dist origin gh-pages // needed because index file is not located @ /root 
+//movie database doesn't return results
+//crypto page doesn't resolve
+//site seems to resolve locally with both src and dist index.html files?
